@@ -1,0 +1,131 @@
+body{
+	/*background: #323232;*/
+	background-color: #323232!important;
+}
+#intro{
+	background: black;
+	color: yellow;
+	text-align: center;
+}
+#qualification{
+	background: yellow;
+	color: black;
+	/*text-align: center;*/
+}
+#accom{
+  background: white;
+  color: black;
+  text-align: center;
+}
+.text{
+  font-size: 17px;
+  font-weight: bold;
+}
+.image {
+  display: inline-block;
+  /*max-width: 35%;*/
+  width: 180px;
+  height: auto;
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  /*border-radius: 4px;*/
+  -webkit-transition: all .2s ease-in-out;
+       -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+}
+
+ul{
+	font-size: 20px;
+}
+ .timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+}
+.profile{
+  width: 500px;
+  
+}
+footer .copyright{
+  width: 100%;
+  background-color: #ddd;
+  overflow: hidden;
+  margin-top: 40px;
+}
+.copyright .footer_nav{
+     width: 60%!important;
+    float: left;
+    margin: 33px 77px 22px;
+    list-style: none;
+    font-size: 15px;
+    color: #5D5D5D;
+}
+.footer_nav li{
+  float: left;
+  margin: 0px;
+  padding: 0px;
+}
+.footer_nav li a{
+  color: #5D5D5D;
+    text-decoration: none;
+    padding: 0px 6px;
+    border-right: 1px solid #5D5D5D;
+    line-height: 12px;
+    display: block;
+
+}
+.icon a:hover{
+  color: #03a9f4!important;
+}
+.footer_nav .copyright_txt{
+    margin-top: 20px;
+}
+/*.footer_logo{
+  width: 30%;
+  float: left;
+}
+*/.footer_logo .footer_logo_img{
+  margin-top: 28px;
+}
+.footer_nav li a:hover{
+   color: #03a9f4!important;
+}
+.logo {
+    vertical-align: middle;
+    width: 120px;
+    margin-left: 10%;
+}
+.navbar-nav li a:hover{
+  color: #03a9f4!important;
+}
+ul a{
+ color: black;
+
+}
+a:hover{
+    color: #F44336!important;
+    text-decoration: underline;
+}
+@media (min-width: 320px) and (max-width: 1000px){
+  .copyright .footer_nav{
+    width: 100%!important;
+    float: left;
+    margin: 33px -10px 22px;
+    list-style: none;
+    font-size: 15px;
+    color: #5D5D5D;
+  }
+  .footer_logo{
+    display: none;
+  }
+  #ex{
+    display: none;
+  }
+}
+
+
+
+
