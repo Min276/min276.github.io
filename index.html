@@ -7,10 +7,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
+	   <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
      <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/function.js"></script>
+<link rel="stylesheet" type="text/css" href="css/fontawesome.css">
+<link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/all.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+
 <meta name="title" content="Min Khant Kyaw">
 <meta name="image" content="https://min276.netlify.app/images1/minkhantkyaw.png">
 <meta name="language" content="English">
@@ -29,15 +35,21 @@
 <meta property="og:type"          content="personal website" />
 </head>
 
-<body oncontextmenu ="return false">
+<body oncontextmenu ="return true">
 <nav class="navbar-fixed" style="background: white">
         <div class="container-fluid">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 
-              <i class="fa fa-bars" style="font-size:21px;color:black"></i>
-            </button>
-            <a class="navbar-brand" href="#"><img style="width: 50px; margin-top: -5px;" src="images1/shotcut_icon.png" alt="main logo"></a>
+            <a class="navbar-brand" href="#"><img style="width: 50px; margin-top: -6.5px;" src="images1/shotcut_icon.png" alt="main logo"></a>
+
+
+                      <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fas fa-bars" style="font-size:26px;"></span>
+            <span class="fas fa-times" style="font-size:26px;"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav" style="font-size: 18px">
@@ -45,7 +57,9 @@
               <li><a href="#qualification">Qualification</a></li>
               <li><a href="#projects">Projects</a></li>
               <li><a href="#timeline">Timeline</a></li>
-              <li><a href="userfriendlytodolist.html">To-Do-List</a></li>
+              <li id="tdl"><a href="userfriendlytodolist.html">To-Do-List</a></li>
+
+
               <!-- here is the dropdown menu -->
 
               <li class="dropdown">
@@ -58,17 +72,21 @@
               </li>
 
               <!-- the end of the dropdown menu -->
+             <li class="nav-item-x">
+             <span id="icon">v2.0
+             <a href="https://github.com/Min276" style="border-radius: 50px;font-size: 15px" class="btn btn-dark">
+             <i class="fab fa-github" style="font-size: 18px"></i> Min276
+             </a>
+             </span>
+             </li>
  
             </ul>
           </div>
         </div>
       </nav>
-     <div class="container">
-     <div class="row">
-
-     </div>
-     </div>
-     <div class="container">
+     
+    
+     
      <div class="row">
       
      	<div id="intro" class="col-md-6 col-sm-12">
@@ -83,38 +101,40 @@
      		  <!-- <p class="description" style="color: lightblue">Nothing is impossible as long as you try hard.</p> --><br>
             <p class="icon" style="word-spacing: 20px;">
     <a style="color: white;font-size: 26px;" href="https://github.com/Min276"><i class="fab fa-github"></i></a>  
-    <a style="color: white;font-size: 26px;" href="https://www.linkedin.com/in/minkhantkyaw-dev/"><i class="fab fa-linkedin"></i></a>  
-    <a style="color: white;font-size: 26px;" href="https://www.facebook.com/minkhantkyaw276"><i class="fab fa-facebook-square"></i></a>
+    <a style="color: white;font-size: 27px;" href="https://www.linkedin.com/in/minkhantkyaw-dev/"><i class="fab fa-linkedin"></i></a>  
+    <a style="color: white;font-size: 27px;" href="https://www.facebook.com/minkhantkyaw276"><i class="fab fa-facebook-square"></i></a>
   </p>
   
                  <br>
      		</div>
      	</div>
-          <div id="qualification" class="col-md-6 col-sm-12"  style="height: 406.97px">
+          <div id="qualification" class="col-md-6 col-sm-12" >
                <br>
               <div class="card">
 
                <h2 style="text-align: center;margin-bottom: 25px;">How I'm certified</h2>
-               <ul style="list-style: none">
-                 <a href="https://www.coursera.org/account/accomplishments/verify/TLSQUR566XV7"><li class="col-md-6 col-sm-12" style="margin-bottom: 18px;"><img class="img-sthumbnail" src="images1/universityoflondon.png" alt="uni seal">  HTML,CSS,JS</li></a>
-                 <a href="https://www.coursera.org/account/accomplishments/verify/ZYRZ6BML2M38"><li class="col-md-6 col-sm-12" style="margin-bottom: 18px;"><img class="img-sthumbnail" src="images1/cal_university.png" alt="uni seal">   Info Architeture</li></a>
-                 <a href="https://www.coursera.org/account/accomplishments/verify/54VNXKV6E734"><li class="col-md-6 col-sm-12" style="margin-bottom: 18px;"><img class="img-sthumbnail" src="images1/universityofmichigan.png" alt="uni seal">   Python (Basic)</li></a>
-                 <a href="https://www.coursera.org/account/accomplishments/verify/4WMH8PHJHJKF"><li class="col-md-6 col-sm-12" style="margin-bottom: 18px;"><img class="img-sthumbnail" src="images1/universityoflondon.png" alt="uni seal">   Web Design</li></a>
+               <ul style="list-style: none;">
+                 <li class="col-md-6 col-xs-6" style="margin-bottom: 18px;"><a href="https://www.coursera.org/account/accomplishments/verify/TLSQUR566XV7"><img class="img-sthumbnail" src="images1/universityoflondon.png" alt="uni seal">  HTML,CSS,JS</a></li>
+                 <li class="col-md-6 col-xs-6" style="margin-bottom: 18px;"><a href="https://www.coursera.org/account/accomplishments/verify/ZYRZ6BML2M38"><img class="img-sthumbnail" src="images1/cal_university.png" alt="uni seal">   Info Architeture</a></li>
+                 <li class="col-md-6 col-xs-6" style="margin-bottom: 18px;"><a href="https://www.coursera.org/account/accomplishments/verify/54VNXKV6E734"><img class="img-sthumbnail" src="images1/universityofmichigan.png" alt="uni seal">   Python</a></li>
+                 <li class="col-md-6 col-xs-6" style="margin-bottom: 18px;"><a href="https://www.coursera.org/account/accomplishments/verify/4WMH8PHJHJKF"><img class="img-sthumbnail" src="images1/universityoflondon.png" alt="uni seal">   Web Design</a></li>
+                 <li class="col-md-6 col-xs-6" style="margin-bottom: 18px;"><a href="https://cutt.ly/mk1X1LS"><img class="img-sthumbnail" src="images1/google.png" alt="uni seal">   Digital Marketing</a></li>
+                 <li class="col-md-6 col-xs-6" style="margin-bottom: 18px;"><a href="https://www.coursera.org/account/accomplishments/verify/ECK227CG3V62"><img class="img-sthumbnail" src="images1/universityofmichigan.png" alt="uni seal">   JavaScript</a></li>
                  <li class="col-md-12" id="ex" >
                   Coming Soon ...</li>
                </ul>
 
            <br>
-                            </div>
+            </div>
           </div>
 </div>
-</div>
-<div class="container" id="accom">
-<div class="row">
-  <div id="projects">
+<div class="row1" id="accom">
+
+
+  <div id="projects" align="center">
     <h3>Some of my projects</h3>
     <br>
-    <div class="col-md-3 col-sm-6 col-12">
+    <div class="col-md-3 col-xs-6">
       <div class="card">
         <a href="https://covid-19infoweb.netlify.app">
         <img class="img-thumbnail" src="images1/project_one.png" alt="project one">
@@ -123,7 +143,7 @@
 
       </div>
     </div>
-    <div class="col-md-3 col-sm-6 col-12">
+    <div class="col-md-3 col-xs-6">
       <div class="card">
         <a href="https://github.com/Min276/Small-Banking-System">
         <img class="img-thumbnail" src="images1/project_two.png" alt="project two">
@@ -131,7 +151,7 @@
         </a>
       </div>
     </div>
-    <div class="col-md-3 col-sm-6 col-12">
+    <div class="col-md-3 col-xs-6">
       <div class="card">
         <a href="https://aungpyaeshan.netlify.app">
         <img class="img-thumbnail" src="images1/project_three.png" alt="project three">
@@ -139,7 +159,7 @@
         </a>
       </div>
     </div>
-    <div class="col-md-3 col-sm-6 col-12">
+    <div class="col-md-3 col-xs-6">
       <div class="card">
         <a href="https://covid19infoweb.netlify.app">
         <img class="img-thumbnail" src="images1/project_four.png" alt="project four">
@@ -147,25 +167,25 @@
         </a>
       </div>
     </div>
-      </div>
-</div>
+  </div>
 </div>
 
 
-<div class="container">
-<div class="row">
-    <div style="color: white" id="timeline">
+
+
+<div class="container" id="timeline">
+
   <div  class="col-md-6 col-sm-12">
     <div class="content">
       <!-- <p class="btn-warning" style="width: 50px; border-radius: 50px">Hello!</p>
  -->      <h2>2020</h2>
-      <p><!-- During the early months, I was fully occupied with stuffs like studying.Later on, -->I could make myself productive, doing things I'm passionate about like lauching websites and joining online courses and in this way I become skillful and knowledgable then got several certificates. </p>
+      <p><!-- During the early months, I was fully occupied with stuffs like studying.Later on, -->I could make myself productive, doing things I'm passionate about like lauching websites or joining online courses and in this way I become skillful and knowledgable, besides achieved several certificates. </p>
     </div>
   </div>
   <div  class="col-md-6 col-sm-12">
     <div class="content">
       <h2>2019</h2>
-      <p>It was a legendary year for me as I started attending at University. I speclized "Information Technology Engineering" as my specialization.</p>
+      <p>It was a legendary year for me as I started attending at University. I took "Information Technology Engineering" as my career.</p>
     </div>
   </div>
   <div  class="col-md-6 col-sm-12" style="float: right;">
@@ -189,12 +209,12 @@
   <div class="col-md-6 col-sm-12">
     <div class="content">
       <h2>2003</h2>
-      <p>This was the year when I was born. To be exact, I was given birth to on 19th June, which was Thursday.</p>
+      <p>This was the year when I was born. To be exact, I was given birth to on 19<sup>th</sup> June, which was Thursday.</p>
     </div>
   </div>
 </div>
-</div>
-</div>
+
+
 <footer>
          <section class="copyright">
           <div class="row">
@@ -208,8 +228,8 @@
 
              </ul>
            <div class="footer_logo">
-              <figure class="footer_logo_img">
-                <img class="logo"src="images1/logo.png" alt="footer logo">
+              <figure class="footer_logo_img" align="centre">
+                <a href="https://min276.netlify.app/images1/logo.png"><img class="logo"src="images1/logo.png" alt="footer logo"></a>
               </figure>
            </div>
          </div>
