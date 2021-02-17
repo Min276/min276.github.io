@@ -155,7 +155,10 @@ input {
 @media (min-width:320px) and (max-width: 375px){
 .addBtn{
   display: none;
-}
+ }
+h3{
+  font-size: 18.5px;
+ }
 }
 @media (min-width: 376px){
   .addOn{
