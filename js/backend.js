@@ -99,11 +99,12 @@ document.getElementById('date').innerHTML = '<i class="fa fa-clock"></i> '+ outp
 (function(){
   
   var list = document.querySelector('#myUL');
-      form = document.querySelector('#newList'),
+      sform = document.querySelector('#newListS'),
+      lform = document.querySelector('#newListL')
       item = document.querySelector('#myInput');
   
-  form.addEventListener('click',function(e){
-    // e.preventDefault();
+  sform.addEventListener('click',function(e){
+    e.preventDefault();
     
     if (item.value === '') {
     alert("You must write something!");
@@ -114,6 +115,19 @@ document.getElementById('date').innerHTML = '<i class="fa fa-clock"></i> '+ outp
     
         }
   },false)
+  lform.addEventListener('click',function(e){
+    e.preventDefault();
+    
+    if (item.value === '') {
+    alert("You must write something!");
+    } else {
+    list.innerHTML += '<li>' + item.value  + '</li>';
+    item.value = "";
+    store(); 
+    
+        }
+  },false)
+
   
   list.addEventListener('click',function(e){
     var t = e.target;

@@ -7,12 +7,11 @@
  <!DOCTYPE html>
 <html>
 <head>
- <title>To-Do-List - Login </title>
+ <title>To-Do-List - Sign Up </title>
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="shotcut icon" href="images1/shotcut_icon.png" alt="shotcut icon">
-
-
+ <!-- <link rel="stylesheet" type="text/css" href="css/responsive.css"> -->
  <style>
  body {
  background: #efefef;
@@ -42,7 +41,7 @@
  margin: 0 0 20px 0;
  padding: 0 0 10px 0;
  border-bottom: 1px solid #ddd;
- font-size: 37px;
+ font-size: 33px;
  }
  input[type=text], input[type=password] {
   display: block;
@@ -56,7 +55,7 @@
         padding: 39px;
     }
     h1{
-        font-size: 28px;
+        font-size: 25px;
     }
  }
 @media (min-width: 451px) and (max-width: 499px){
@@ -66,7 +65,7 @@
     padding: 85px;
   }
   h1{
-    font-size: 33px;
+    font-size: 29px;
   }
 }
 @media (min-width: 400px) and (max-width: 450px){
@@ -76,7 +75,7 @@
     padding: 70px;
   }
   h1{
-    font-size: 30px;
+    font-size: 27px;
   }
 }
  </style>
@@ -87,38 +86,42 @@
 
 <body>
  <div id="wrap">
- <h1>You need to Login</h1>
+ <h1>You need to Sign Up</h1>
   <form action="userfriendlytodolist.html" method="POST">
- <label for="id">Username</label>
+ <label for="id">Name</label>
     <div class="input-group mb-3">
   <div class="input-group-prepend">
     <button type="button" class="btn btn-warning"><i class="fa fa-fw fa-user-circle" style="font-size:20px;color:black"></i></button>
-   <input type="text" name="id" id="name" required>
+   <input type="text" placeholder="Set your username here" name="id" id="nameSet" required>
   </div>
 
  <label for="password" style="
  width: 100%;
  margin-bottom: 0px;
- ">Password</label>
+ ">Set Password</label>
      <div class="input-group mb-3">
   <div class="input-group-prepend">
     <button type="button" class="btn btn-warning"><i class="fa fa-fw fa-lock" style="font-size:20px;color:black"></i></button>
 
- <input type="password" name="password" id="password" required>
+ <input type="password" placeholder="U/L Cases,numbers 8-20" name="password" id="passwordSet" required>
 </div>
  <br>
-<button onclick="return doCheck();" type="submit" class="btn btn-outline-success" value="Login" style="    
+
+<button onclick="return doValidate()" type="submit" class="btn btn-outline-primary" value="Sign Up" style="
     margin-bottom: -6px;
     margin-top: 30px;
-"><i class="fa fa-fw fa-sign-in" style="font-size:20px;color:black"></i> Login</button>
- <a href="signup.html"><button type="button" class="btn btn-primary" value="Sign Up" style="
+        "><i class="fa fa-fw fa-user-plus" style="font-size:20px;color:black"></i> Sign Up</button>
+
+ <a href="login.html"><button  type="button" class="btn btn-danger" value="Login" style=" 
     margin-bottom: -6px;
     margin-top: 30px;
-        margin-left: 23px;
-"><i class="fa fa-fw fa-user-plus" style="font-size:20px;color:black"></i> Sign Up</button></a>
+    margin-left: 19px;
+
+"><i class="fa fa-fw fa-sign-in" style="font-size:20px;color:black"></i> Cancel</button></a>
   </form>
 
 </div>
 <script src="js/validate.js"></script>
+<!-- <link rel="stylesheet" type="text/css" href="css/support.css"> -->
 </body>
 </html> 
