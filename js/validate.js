@@ -20,9 +20,28 @@ function doCheck() {
        && password == "Min30075ttu" ){
 
         alert( "Login Succeed !" );
-        window.location.href="/userfriendlytodolist.html";
+        location.href="/userfriendlytodolist.html";
         return true;
-    }else {
+    }else if (username == "" && password == ""){
+        alert( "Please enter both Username & Password!");
+        return false;
+    }else if (username == ""){
+        alert( "Please enter Username!");
+        return false;
+    }else if (password == ""){
+        alert("Please enter Password!");
+        return false;
+    }else if (username != "Min Khant Kyaw" && password != "Min30075ttu"){
+        alert("Invalid Username & Password!");
+        return false;
+    } else if (username != "Min Khant Kyaw"){
+        alert("Invalid Username!");
+        return false;
+    }else if (password != "Min30075ttu"){
+        alert("Invalid Password!");
+        return false;
+    }
+    else {
         // window.location.href = "/userfriendlytodolist.html";
         // document.getElementById('username').innerHTML = '<i class="fa fa-list"></i> ' + username;
         // console.log('username');
@@ -45,11 +64,21 @@ function doValidate() {
     // var passwordError = document.getElementById("invalidPassword");
     password.trim();
     var passCheck = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}$/;
-    if (!passCheck.test(password)) {
-        alert("Error!: Password must contain Upper Case, Lower Case, Numbers and between 8 to 20 characters.");
+    if(username == "" && password == ""){
+        alert("Please set both your username & password!");
+        return false;
+    }else if (username == ""){
+        alert("Please set your username!");
+        return false;
+    }else if (password == ""){
+        alert("Please set your password!");
+        return false;
+    }else if (!passCheck.test(password)) {
+        alert("Error! Password must contain Upper Case, Lower Case, Numbers and between 8 to 20 characters.");
         return false;
     } else {
-        window.location.href = "/userfriendlytodolist.html";
+        alert('Sign Up Succeed!')
+        location.href="/userfriendlytodolist.html";
         return true;
     }
 }
