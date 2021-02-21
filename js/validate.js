@@ -16,11 +16,11 @@ function doCheck() {
     // var usernameError = document.getElementById("invalidName");
     // var passwordError = document.getElementById("invalidPassword");
      
-     if (username == "Min Khant Kyaw"
+     if (username == "MinKhantKyaw"
        && password == "Min30075ttu" ){
 
-        alert( "Login Succeed !" );
-        location.href="/userfriendlytodolist.html";
+        alert( "Login Succeed!" );
+        location.href="//userfriendlytodolist.html";
         return true;
     }else if (username == "" && password == ""){
         alert( "Please enter both Username & Password!");
@@ -31,10 +31,10 @@ function doCheck() {
     }else if (password == ""){
         alert("Please enter Password!");
         return false;
-    }else if (username != "Min Khant Kyaw" && password != "Min30075ttu"){
+    }else if (username != "MinKhantKyaw" && password != "Min30075ttu"){
         alert("Invalid Username & Password!");
         return false;
-    } else if (username != "Min Khant Kyaw"){
+    } else if (username != "MinKhantKyaw"){
         alert("Invalid Username!");
         return false;
     }else if (password != "Min30075ttu"){
@@ -78,7 +78,7 @@ function doValidate() {
         return false;
     } else {
         alert('Sign Up Succeed!')
-        location.href="/userfriendlytodolist.html";
+        location.href="//userfriendlytodolist.html";
         return true;
     }
 }
