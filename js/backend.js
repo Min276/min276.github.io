@@ -92,7 +92,7 @@ d = new Date();
 x = d.getDay();
 
 
-document.getElementById('date').innerHTML = '<i class="fa fa-clock"></i> '+ output + days[x];
+document.getElementById('showDate').innerHTML = '<i class="fa fa-clock"></i> '+ output + days[x];
 
 
 

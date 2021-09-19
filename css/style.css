@@ -1,6 +1,13 @@
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
 body{
 	background: #323232;
 	/**/
+}
+html{
+  scroll-behavior: smooth;
 }
 #intro{
 	background: black;
@@ -18,11 +25,75 @@ body{
   color: black;
   text-align: center;
 }
+.skills{
+ padding: 5px 5px 20px 5px;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    margin-bottom: 40px;
+}
+.skills:hover{
+  box-shadow: #ddd 0px 1px 3px 2px; 
+  color: #03a9f4;
+  background: black;
+  transition: 1s !important;
+}
+ a i {
+            transition: all 0.3s linear;
+        }
+  
+        a:hover i {
+            transform: scale(0.8);
+        }
+
+.projects{
+ padding: 5px 5px 20px 5px;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    margin-bottom: 40px;
+}
 
 .text{
-  font-size: 17px;
-  font-weight: bold;
+  margin: 8px;
+    font-size: 17px;
+    padding: 5px;
+    margin-top: -5px;
 }
+  .readmore{
+    padding: 5px;
+    background: #03a9f4;
+    border-color: #03a9f4;
+    color: white;
+    border: 2px solid #03a9f4;
+    border-radius: 5px;
+    font-size: 15px;
+    text-decoration: none;
+}
+.view{
+    margin-left: 29px;
+    padding: 5px;
+    background: black;
+    border: 2px solid black;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    text-decoration: none;
+}
+.readmore:hover{
+    text-decoration: underline !important;
+    color: white !important;
+}
+.view:hover{
+  color: white !important;
+}
+
 .image {
   display: inline-block;
   /*max-width: 35%;*/
@@ -32,6 +103,7 @@ body{
     border: 6px solid #03a9f4;
     /* color: black; */
     background-color: black;
+    cursor: url('images1/profile_picture.jpg'), auto;
   /*border-radius: 4px;*/
   -webkit-transition: all .2s ease-in-out;
        -o-transition: all .2s ease-in-out;
@@ -51,6 +123,7 @@ ul{
   /*position: relative;*/
   /*max-width: 1200px;*/
   /*margin: 0 auto;*/
+      padding: 30px 20px 0px 20px;
   color: white;
   background: #323232;
 }
@@ -132,19 +205,19 @@ a:hover{
   /*max-width: 35%;*/
   width: 250px;
   height: 200px;
-  padding: 4px;
+  padding: 10px;
   /*line-height: 1.42857143;*/
   background-color: #fff;
-  border: 1.5px solid #ddd;
-  border-radius: 10px;
+  /*border: 1.5px solid #ddd;*/
+  /*border-radius: 10px;*/
   -webkit-transition: all .2s ease-in-out;
        -o-transition: all .2s ease-in-out;
           transition: all .2s ease-in-out;
 }
 .img-thumbnail:hover{
-  border: 5px #00bcd4;
-  border-style: dashed;
-  padding: 3px;
+  /*border: 5px #00bcd4;
+  border-style: dashed;*/
+  transform: scale(0.9);
 }
 .img-sthumbnail {
   display: inline-block;
@@ -184,7 +257,7 @@ a:hover{
 }
 @media (min-width: 500px) and (max-width: 767px){
   .img-thumbnail{
-    width: 220px;
+    width: 210px;
     height: 180px;
 
 }
