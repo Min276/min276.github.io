@@ -20,7 +20,7 @@ function doCheck() {
        && password == "Min30075ttu" ){
 
         alert( "Login Succeed!" );
-        window.location.href= "/userfriendlytodolist.html";
+        window.location.href= "/todolist.html";
         return true;
     }else if (username == "" && password == ""){
         alert( "Please enter both Username & Password!");
