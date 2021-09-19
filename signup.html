@@ -123,5 +123,38 @@
 </div>
 <script src="js/validate.js"></script>
 <!-- <link rel="stylesheet" type="text/css" href="css/support.css"> -->
+<script type="text/javascript">
+  function doValidate() {
+    try{
+    var username = document.getElementById("nameSet").value;
+    var password = document.getElementById("passwordSet").value;
+    // var usernameError = document.getElementById("invalidName");
+    // var passwordError = document.getElementById("invalidPassword");
+    password.trim();
+    var passCheck = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}$/;
+    if(username == "" && password == ""){
+        alert("Please set both your username & password!");
+        return false;
+    }else if (username == ""){
+        alert("Please set your username!");
+        return false;
+    }else if (password == ""){
+        alert("Please set your password!");
+        return false;
+    }else if (!passCheck.test(password)) {
+        alert("Error! Password must contain Upper Case, Lower Case, Numbers and between 8 to 20 characters.");
+        return false;
+    } else {
+        alert('Sign Up Succeed!')
+        window.location.href="/userfriendlytodolist.html";
+        return true;
+    }
+}
+catch(e) {
+        return false;
+    }
+    return false;
+}
+</script>
 </body>
 </html> 
