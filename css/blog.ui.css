@@ -1,0 +1,66 @@
+body {
+ background: #efefef;
+ /*font-family: arial;*/
+ color: #333;
+ }
+ 
+ button{
+ margin-bottom: 14px;
+ }
+ #wrap {
+    width: 500px;
+    padding: 92px;
+    margin: 100px auto;
+    border: 4px solid #03a9f4;
+    background-image: url(../images1/loginbackground.jpg);
+    background-position: center;
+    background-size: 500px;
+    background-repeat: no-repeat;
+    /* text-align: center; */
+    height: 521px;
+    margin: 0px auto 0px auto;
+    background-image: cover;
+    background-size: auto;
+  }
+ h1 {
+ margin: 0 0 20px 0;
+ padding: 0 0 10px 0;
+ border-bottom: 1px solid #ddd;
+ font-size: 37px;
+ }
+ input[type=text], input[type=password] {
+  display: block;
+    margin-bottom: 14px;
+        line-height: 37px;
+     }
+ @media (min-width: 320px) and (max-width: 399px){
+    #wrap{
+        width: auto;
+        height: auto;
+        padding: 39px;
+    }
+    h1{
+        font-size: 28px;
+    }
+ }
+@media (min-width: 451px) and (max-width: 499px){
+  #wrap{
+    width: auto;
+    height: auto;
+    padding: 85px;
+  }
+  h1{
+    font-size: 33px;
+  }
+}
+@media (min-width: 400px) and (max-width: 450px){
+  #wrap{
+    width: auto;
+    height: auto;
+    padding: 70px;
+  }
+  h1{
+    font-size: 30px;
+  }
+}
+ 

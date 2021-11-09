@@ -5,89 +5,37 @@
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="shotcut icon" href="/images1/shotcut_icon.png" alt="shotcut icon">
- <!-- <link rel="stylesheet" type="text/css" href="css/responsive.css"> -->
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
- <style>
- body {
- background: #efefef;
- /*font-family: arial;*/
- color: #333;
- }
- 
- button{
- margin-bottom: 14px;
- }
- #wrap {
-    width: 500px;
-    padding: 92px;
-    margin: 100px auto;
-    border: 4px solid #03a9f4;
-    background-image: url(images1/loginbackground.jpg);
-    background-position: center;
-    background-size: 500px;
-    background-repeat: no-repeat;
-    /* text-align: center; */
-    height: 521px;
-    margin: 0px auto 0px auto;
-    background-image: cover;
-    background-size: auto;
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" type="text/css" href="../css/blog.ui.css">
+<style>
+  h1{
+    font-size: 33px;
   }
- h1 {
- margin: 0 0 20px 0;
- padding: 0 0 10px 0;
- border-bottom: 1px solid #ddd;
- font-size: 33px;
- }
- input[type=text], input[type=password] {
-  display: block;
-    margin-bottom: 14px;
-        line-height: 37px;
-     }
- @media (min-width: 320px) and (max-width: 399px){
-    #wrap{
-        width: auto;
-        height: auto;
-        padding: 39px;
-    }
+   @media (min-width: 320px) and (max-width: 399px){
     h1{
         font-size: 25px;
     }
  }
 @media (min-width: 451px) and (max-width: 499px){
-  #wrap{
-    width: auto;
-    height: auto;
-    padding: 85px;
-  }
   h1{
     font-size: 29px;
   }
 }
 @media (min-width: 400px) and (max-width: 450px){
-  #wrap{
-    width: auto;
-    height: auto;
-    padding: 70px;
-  }
   h1{
     font-size: 27px;
   }
 }
- </style>
- 
-
+</style>
 </head> 
 
 
 <body>
  <div id="wrap">
  <h1>You need to Sign Up</h1>
-  <form action="/asset/todolist.html" method="post">
+  <form action="todolist.html" method="POST">
  <label for="id">Set Username</label>
     <div class="input-group mb-3">
   <div class="input-group-prepend">
@@ -107,54 +55,12 @@
 </div>
  <br>
 
-<button onclick="return doValidate()" type="submit" class="btn btn-outline-primary" value="Sign Up" style="
-    margin-bottom: -6px;
-    margin-top: 30px;
-        "><i class="fa fa-fw fa-user-plus" style="font-size:20px;color:black"></i> Sign Up</button>
+<button onclick="return doValidate()" type="submit" class="btn btn-outline-primary" value="Sign Up" style=" margin-bottom: -6px; margin-top: 30px;"><i class="fa fa-fw fa-user-plus" style="font-size:20px; color:black"></i> Sign Up</button>
 
- <a href="login.html"><button  type="button" class="btn btn-danger" value="Login" style=" 
-    margin-bottom: -6px;
-    margin-top: 30px;
-    margin-left: 19px;
-
-"><i class="fa fa-fw fa-sign-in" style="font-size:20px;color:black"></i> Cancel</button></a>
+ <a href="login.html"><button  type="button" class="btn btn-danger" value="Login" style="margin-bottom: -6px; margin-top: 30px; margin-left: 19px;"><i class="fa fa-fw fa-sign-in" style="font-size:20px; color:black"></i> Cancel</button></a>
   </form>
 
 </div>
-<script src="js/validate.js"></script>
-<!-- <link rel="stylesheet" type="text/css" href="css/support.css"> -->
-<script type="text/javascript">
-  function doValidate() {
-    try{
-    var username = document.getElementById("nameSet").value;
-    var password = document.getElementById("passwordSet").value;
-    // var usernameError = document.getElementById("invalidName");
-    // var passwordError = document.getElementById("invalidPassword");
-    password.trim();
-    var passCheck = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}$/;
-    if(username == "" && password == ""){
-        alert("Please set both your username & password!");
-        return false;
-    }else if (username == ""){
-        alert("Please set your username!");
-        return false;
-    }else if (password == ""){
-        alert("Please set your password!");
-        return false;
-    }else if (!passCheck.test(password)) {
-        alert("Error! Password must contain Upper Case, Lower Case, Numbers and between 8 to 20 characters.");
-        return false;
-    } else {
-        alert('Sign Up Succeed!')
-        window.location.href="/userfriendlytodolist.html";
-        return true;
-    }
-}
-catch(e) {
-        return false;
-    }
-    return false;
-}
-</script>
+<script src="../js/validate.js"></script>
 </body>
 </html> 

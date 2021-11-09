@@ -20,7 +20,7 @@ function doCheck() {
        && password == "Min30075ttu" ){
 
         alert( "Login Succeed!" );
-        window.location.href= "/todolist.html";
+        // window.location.href= "/todolist.html";
         return true;
     }else if (username == "" && password == ""){
         alert( "Please enter both Username & Password!");
@@ -78,7 +78,7 @@ function doValidate() {
         return false;
     } else {
         alert('Sign Up Succeed!')
-        window.location.href="/userfriendlytodolist.html";
+        // window.location.href="/userfriendlytodolist.html";
         return true;
     }
 }
